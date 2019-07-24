@@ -1,5 +1,5 @@
 import React from "react";
 
-const AddButton = () => <button className="button--plus">+</button>;
+const AddButton = (props) => <button className="button--plus" {...props}>+</button>;
 
 export { AddButton };
