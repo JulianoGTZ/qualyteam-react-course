@@ -1,6 +1,15 @@
 import React from "react";
 import { Button } from "../../components/button";
-const Register = () => (
+
+const Register = () => {
+  
+
+  const handleClick = () => {
+    console.log('ueeh');
+  }
+
+
+  return(
   <div className="register">
     <h1>Nova receita</h1>
 
@@ -27,9 +36,10 @@ const Register = () => (
           </div>
         </div>
       </form>
-      <Button>Create</Button>
+      <Button onClick={handleClick}>Create</Button>
     </div>
   </div>
-);
+  ); 
+};
 
 export { Register };

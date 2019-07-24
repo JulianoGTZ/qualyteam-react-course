@@ -1,5 +1,9 @@
 import React, { Fragment } from "react";
+
 import { Card } from "../../components/card";
+import { Navbar } from '../../components/navbar'
+
+import "../../App.scss";
 
 const recipes = [
   {
@@ -53,7 +57,10 @@ const recipes = [
 ];
 const List = () => (
   <Fragment>
-    {recipes.map(recipe => <Card key={recipe.id} {...recipe} />)}
+    <Navbar />
+    <main className="content--container">
+      {recipes.map(recipe => <Card key={recipe.id} {...recipe} />)}
+    </main>
   </Fragment>
 );
 export { List };

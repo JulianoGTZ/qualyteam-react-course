@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../logo.png";
 import { AddButton } from "./add-button";
+
 const Navbar = () => (
   <nav className="navbar">
     <figure className="navbar--logo-container">
