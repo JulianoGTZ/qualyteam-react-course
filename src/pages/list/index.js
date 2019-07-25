@@ -11,7 +11,7 @@ const List = (props) => {
 
   useEffect(() => {
     async function fetchRecipes() {
-      fetch(`http://localhost:4000/food?q=${search}`)
+      fetch(`http://localhost:4000/food`)
         .then(res => res.json())
         .then(data => {
           setRecipes(data);

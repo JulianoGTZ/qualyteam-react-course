@@ -8,7 +8,7 @@ const Navbar = ({ history, onSearchChange }) => (
       <img src={logo} alt="Uma imagem impressionante" />
     </figure>
     <div className="navbar--center-container">
-      <input role="search" placeholder="Procure uma receita" aria-labelledby="search" onChange={e => onSearchChange(e.target.value)} />
+      { /*<input role="search" placeholder="Procure uma receita" aria-labelledby="search" onChange={e => onSearchChange(e.target.value)} /> */ }
     </div>
     <div className="navbar--right-container">
       <AddButton onClick={() => history.push('/register')} />
